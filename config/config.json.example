@@ -1,0 +1,6 @@
+{
+  "appid": "",
+  "appkey": "",
+  "callback": "",
+  "scope": ["get_user_info"]
+}
