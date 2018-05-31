@@ -1,6 +1,6 @@
 {
   "appid": "",
   "appkey": "",
-  "callback": "",
+  "callback": "/oauth/qq/callback",
   "scope": ["get_user_info"]
 }

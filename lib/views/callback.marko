@@ -1,0 +1,17 @@
+<script>
+var uuid = "${data.uuid}";
+var token = "${data.token}";
+var expires = new Date().getTime() + 1000 * 3600 * 24;
+var setItem = function(key, value) {
+  localStorage.setItem(key, JSON.stringify({
+    expires: expires,
+    rawData: value
+  }))
+}
+
+setItem('uuid', uuid);
+setItem('token', token);
+
+window.opener.location.reload();
+window.close();
+</script>
