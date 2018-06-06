@@ -12,6 +12,7 @@ var setItem = function(key, value) {
 setItem('uuid', uuid);
 setItem('token', token);*/
 
-window.opener.onOAuthFinished(uuid, token);
+//window.opener.onOAuthFinished(uuid, token);
+window.opener.postMessage({type: 'onOAuthFinished', uuid: uuid, token: token}, '*');
 window.close();
 </script>
