@@ -13,6 +13,6 @@ setItem('uuid', uuid);
 setItem('token', token);*/
 
 //window.opener.onOAuthFinished(uuid, token);
-window.opener.postMessage({type: 'onOAuthFinished', uuid: uuid, token: token}, '*');
+window.opener.postMessage({type: 'onOAuthFinished', uuid: uuid, token: token}, 'https://trpg.moonrailgun.com');
 window.close();
 </script>
